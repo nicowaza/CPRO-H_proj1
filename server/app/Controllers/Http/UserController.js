@@ -6,7 +6,7 @@ class UserController {
 
   async register({ request }) {
     const { username, firstname, lastname, avatarUrl, city }= request.all();
-    console.log(username, firstname, lastname);
+    console.log(username, firstname, lastname, avatarUrl, city);
     const user = await User.create({
       username,
       firstname,
